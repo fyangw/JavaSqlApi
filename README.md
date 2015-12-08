@@ -8,7 +8,7 @@ As we known, Java doesn't support native SQL. But Java supports DSL, which can b
 
 # API DSL Example
 
-'''Java
+```Java
 SELECT(
   T("u").C("id").AS("id"), 
   T("u").C("name").AS("name"),
@@ -21,4 +21,4 @@ SELECT(
     C("name").GT("a")
   )
 )
-'''
+```
