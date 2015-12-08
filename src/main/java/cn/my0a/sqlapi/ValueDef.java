@@ -12,7 +12,7 @@ public abstract class ValueDef {
 		return new Gt(this, new ConstDef(value));
 	}
 	
-	public Condition gt(ValueDef value) {
+	public Condition GT(ValueDef value) {
 		return new Gt(this, value);
 	}
 	
@@ -21,6 +21,10 @@ public abstract class ValueDef {
 	public ValueDef AS(String asName) {
 		this.asName = asName;
 		return this;
+	}
+
+	public Condition EQ(ValueDef value) {
+		return new Eq(this, value);
 	}
 	
 }
