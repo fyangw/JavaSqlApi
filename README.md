@@ -4,7 +4,7 @@ JavaSqlApi is a SQL DSL API for Java.
 
 # Introduction
 
-As we known, Java doesn't support native SQL. But Java supports DSL, which can build SQL-like DSL interface with ease. The API is a good ORM tool to modeling data operation in Java. On the other hand, the API can modeling SQL syntax tree as well.
+As we known, Java doesn't support native SQL. But Java supports DSL, which can build SQL-like DSL interface with ease. The API is a good ORM tool to model data operation in Java. On the other hand, the API can model SQL syntax tree as well.
 
 # SQL API DSL Example
 
