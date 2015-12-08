@@ -11,15 +11,16 @@ As we known, Java doesn't support native SQL. But Java supports DSL, which can b
 SQL API DSL Example
 ```Java
 SELECT(
-  T("u").C("id").AS("id"), 
+  T("u").C("user_id").AS("user_id"), 
   T("u").C("name").AS("name"),
   T("s").C("amount").AS("amount")
 )
 .FROM(T("t_user").AS("u"), T("t_salary").AS("s"))
 .WHERE(
   AND(
-    C("id").GT(5),
-    C("name").GT("a")
+    T("u").C("user_id").EQ(T("s").C("user_id")), 
+    T("u").C("user_id").GT(5),
+    T("u").C("name").GT("a")
   )
 )
 ```
