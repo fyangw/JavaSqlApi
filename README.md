@@ -59,8 +59,8 @@ SELECT(
 .WHERE(
   AND(
     E("u.user_id = s.user_id"), 
-    E("u.user_id > ?", 5),
-    E("u.name > ?", "a")
+    E("u.user_id > ", B(5)),
+    E("u.name > ", B("a"))
   )
 )
 ```
