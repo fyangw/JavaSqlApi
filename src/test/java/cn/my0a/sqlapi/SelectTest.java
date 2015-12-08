@@ -1,4 +1,4 @@
-package sqlapi;
+package cn.my0a.sqlapi;
 
 import static cn.my0a.sqlapi.SqlApi.*;
 import static org.junit.Assert.*;
